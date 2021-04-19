@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Utopia Health Center</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">Utopia</a>
+        <ul>
+            <li><a href="#home" onclick="toggle();">Home</a></li>
+            <li><a href="#introduction" onclick="toggle();">About</a></li>
+            <li><a href="#appointments" onclick="toggle();">Services</a></li>
+            <li><a href="#resources" onclick="toggle();">Resources</a></li>
+            <li><a href="#contact" onclick="toggle();">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle();"></div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+        <div class="overlay"></div>
+
+        <h2 class="animate__animated animate__fadeOut animate__delay-4s" id="normal">Utopia <span>Health</span> Center
+        </h2>
+
+        <div class="container animate__animated animate__fadeIn animate__delay-5s ">
+            <div class="user signinBx">
+                <div class="imgBx">
+                    <div class="overlay"></div>
+                    <img src="./img/pexels-karolina-grabowska-4386467.jpg" alt="">
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h2>Sign Up</h2>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="text" placeholder="Email Address">
+                        <input type="submit" value="Get Help">
+                        <p class="signup">Here for another service?<a href="#" onclick="toggleForm();"> Switch Forms</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+
+                <div class="formBx">
+                    <form id="secondForm">
+                        <h2>Alternate Form</h2>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="text" placeholder="Email Address">
+                        <input type="submit" value="Get Help">
+                        <p class="signup">Go Back<a href="#" onclick="toggleForm();"> Switch Forms</a></p>
+                    </form>
+                </div>
+                <div class="imgBx">
+                    <div class="overlay"></div>
+                    <img src="./img/pexels-cottonbro-3737574.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="sec info-section" id="introduction">
+        <div class="features">
+            <div class="column-big">
+                <h3 class="featurette-heading">About Us</h3>
+                <p>Utopia Health Center*(UHC) offers a wide variety of
+                    therapeutic services to persons in all age groups.
+                    Whether your client needs Outpatient Substance
+                    Abuse Treatment, Eating Disorders, Mental Health
+                    Counseling. Medication Management or to attend
+                    a specific workshop or group; Look no further
+                    because UHC has you covered.
+                </p>
+                <p>Our goal is to provide exceptional client centered
+                    health care with an holistic approach; incorporating
+                    your clients into the UHC Family.
+                    Our programs are offered in English and Spanish</p>
+            </div>
+            <div class="column-small">
+                <img src="./img/pexels-christina-morillo-1181712.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="large-divider">
+        <h2>Call Today!</h2>
+
+        <h3>301-220-2482</h3>
+    </div>
+    <!-- Services -->
+    <section class="sec appt" id="appointments">
+        <div class="content">
+            <div class="mxw800p">
+                <h3 class="featurette-heading">What We Do</h3>
+                <p>Persons with substance use disorders experience
+                    problems in their lives related to their substance
+                    use, such as dysfunctional relationships, poor
+                    performance in school or work, legal troubles,
+                    increased risk of suicide, and more. UHC offers
+                    Treatment to address these problems.</p>
+                <br>
+                <small>*UHCs Substance Abuse Services are certified by
+                    State of Maryland Department of Mental Health
+                    and Hygiene and Department of Behavioral Health
+                    respectively.
+                </small>
+            </div>
+            <div class="services">
+                <div class="box ">
+                    <div class="iconBx">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-medical"
+                            width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+                            <rect x="9" y="3" width="6" height="4" rx="2" />
+                            <line x1="10" y1="14" x2="14" y2="14" />
+                            <line x1="12" y1="12" x2="12" y2="16" />
+                        </svg>
+                    </div>
+                    <div class="content">
+                        <h2>Counseling Services</h2>
+                        <p>Utopia Health Center offers individual, couple, family and/or group counseling by one of our
+                            accomplished clinicians. Our person centered treatment utilizing a holistic approach.</p>
+                    </div>
+                </div>
+                <div class="box ">
+                    <div class="iconBx">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pill" width="88"
+                            height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4.5 12.5l8 -8a4.94 4.94 0 0 1 7 7l-8 8a4.94 4.94 0 0 1 -7 -7" />
+                            <line x1="8.5" y1="8.5" x2="15.5" y2="15.5" />
+                        </svg>
+                    </div>
+                    <div class="content">
+                        <h2>Substance Abuse Treatment</h2>
+                        <p>In addition to traditional therapies, Utopia Health Center offers holistic treatments as part
+                            of our integrative approach to addiction recovery</p>
+                    </div>
+                </div>
+                <div class="box ">
+                    <div class="iconBx">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stethoscope"
+                            width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2ecc71" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 4h-1a2 2 0 0 0 -2 2v3.5h0a5.5 5.5 0 0 0 11 0v-3.5a2 2 0 0 0 -2 -2h-1" />
+                            <path d="M8 15a6 6 0 1 0 12 0v-3" />
+                            <path d="M11 3v2" />
+                            <path d="M6 3v2" />
+                            <circle cx="20" cy="10" r="2" />
+                        </svg>
+                    </div>
+                    <div class="content">
+                        <h2>Clinical Services</h2>
+                        <p>Utopia Health Center offers comprehensive services that include psychiatric evaluations and
+                            medication assisted therapy.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Stats -->
+    <section class="sec stats" id="resources">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Treatment Options</h3>
+                <p>UHC provides therapy services for all ages. We provide individual, family, group, and couples therapy
+                    as well as offer classes to help with parenting, anger management, gambling, antibullying and
+                    domestic violence issues. We accept medicaid and various insurance companies. Self pay options are
+                    also available.</p>
+            </div>
+            <div class="statsBox">
+                <div class="box">
+                    <h2>Counseling</h2>
+                    <ul class="bxList">
+                        <li>Attention deficit hyperactivity disorder (ADHD)</li>
+                        <li>Anxiety</li>
+                        <li>Bipolar disorder</li>
+                        <li>Conduct disorders (including aggression and criminal behavior)</li>
+                        <li>Eating disorders</li>
+                        <li>Depression</li>
+                        <li>Grief and loss</li>
+                        <li>Post-traumatic stress disorder (PTSD)</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2>Clinical</h2>
+                    <p>(Hover to view)</p>
+                    <ul class="treatList">
+                        <li>
+                            <div class="content">
+                                <h3>PSYCHIATRIC SERVICES</h3>
+                                <p>
+                                    Utopia Health Center offers comprehensive services that include psychiatric
+                                    evaluations and medication management. These services are available to children,
+                                    adolescents, and adults with psychiatric disorders to include co-occurring.
+                                    Psychotherapeutic medications do not cure mental illness, but in many cases, can
+                                    help a person function despite some continuing mental pain and difficulty coping
+                                    with problems; in addition they may make other kinds of treatment more effective.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>MEDICATION ASSISTED THERAPY (MAT)</h3>
+                                <p>
+                                    One of the most effective and life-changing forms of care that can help adult men
+                                    and women, aged 18 and older, overcome the compulsion to engage in substance abuse.
+                                    Designed specifically for the treatment of opioid use disorders, medication assisted
+                                    therapy is a combination of medication and therapeutic interventions to include
+                                    counseling. The treatment Utopia Health Center provides with medication is carefully
+                                    administered through regular consultations with a physician.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2>Other Services</h2>
+                    <ul>
+                        <li>Alcohol and Drug Evaluations</li>
+                        <li>Alcohol Education Program - DUI/DWI
+                        </li>
+                        <li>Case Management</li>
+                        <li>Complimentary Therapies (Acupuncture,
+                            Aromatherapy, Yoga)</li>
+                        <li>Drug Testing</li>
+                        <li>Dual-diagnosis services</li>
+                        <li>Expressive Terapy (Art & Music)</li>
+                        <li>Genetic Testing</li>
+                        <li>Groups (Acculturation, Anger Mgmt,
+                            Cancer, Depression, PTSD, Sexual Assault
+                            Awareness, & more)
+                        </li>
+                        <li>Individual and Family Counseling</li>
+                    </ul>
+                </div>
+                <div class="box" style="margin-top: 50px;">
+                    <ul>
+                        <li>Intensive Outpatient Program</li>
+                        <li>Intoxicated Driver Assessments</li>
+                        <li>Medicated Assisted Treatment</li>
+                        <li>Multi-Cultural Services</li>
+                        <li>Sexual Assualt Recovery</li>
+                        <li>Substance Abuse Prevention</li>
+                        <li>Veteran's Targeted Services</li>
+                        <li>Eating Disorder Assessments</li>
+                        <li>Eating Disorder Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio -->
+    
+
+    
+    <!-- Team -->
+    <!-- Contact -->
+    <section class="sec contact" id="contact">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Send Us a Message</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, pariatur.</p>
+            </div>
+            <div class="contactForm">
+                <form >
+                    <div class="row100">
+                        <div class="inputBx50">
+                            <input type="text" name="" placeholder="Full Name">
+                        </div>
+                        <div class="inputBx50">
+                            <input type="text" name="" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <textarea  placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBx100">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sci">
+                <ul>
+                    <li><a href="#"><img src="./img/facebook (1).png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/linkedin.png" alt=""></a></li>
+                    <li><a href="#"><img src="./img/twitter (1).png" alt=""></a></li>
+                </ul>
+            </div>
+            <p class="copyright">Website developed By Cunningham Development LLC</p>
+        </div>
+        
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
