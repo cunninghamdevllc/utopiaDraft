@@ -18,7 +18,7 @@
             <li><a href="#home" onclick="toggle();">Home</a></li>
             <li><a href="#introduction" onclick="toggle();">About</a></li>
             <li><a href="#appointments" onclick="toggle();">Services</a></li>
-            <li><a href="#resources" onclick="toggle();">Resources</a></li>
+            <li><a href="resources.html" onclick="toggle();">Resources</a></li>
             <li><a href="#contact" onclick="toggle();">Contact</a></li>
         </ul>
         <div class="toggle" onclick="toggle();"></div>
@@ -38,19 +38,39 @@
                     <img src="./img/pexels-karolina-grabowska-4386467.jpg" alt="">
                 </div>
                 <div class="formBx">
-                    <form>
+                    <form method="post" action="https://formspree.io/f/mjvjykek">
                         <h2>Sign Up</h2>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="Phone Number">
-                        <input type="text" placeholder="Email Address">
+                        <div class="form-group">
+                            <input type="text" name="name" id="full-name" placeholder="Full Name" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="telephone" id="telephone" name="telephone" placeholder="Phone Number" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="_replyto" id="email" placeholder="Email Address" required="">
+                        </div>
+                        <label for="services">What are you looking for help with?</label>
+                        <select id="services" name="services">
+                            <option value="ADOLESCENTS & YOUNG ADULTS">ADOLESCENTS & YOUNG ADULTS</option>
+                            <option value="Anxiety and Mood Disorders">Anxiety and Mood Disorders</option>
+                            <option value="Attention-Deficit Hyperactivity Disorder">Attention-Deficit Hyperactivity
+                                Disorder</option>
+                            <option value="Chronic Illness/Terminal Illness">Chronic Illness/Terminal Illness</option>
+                            <option value="Child Abuse and Bullying">Child Abuse and Bullying</option>
+                            <option value="Children and Families">Children and Families</option>
+                            <option value="Cult and Harmful Religion Recovery">Cult and Harmful Religion Recovery
+                            </option>
+                            <option value="Domestic / Intimate Partner Violence, Sexual Assault and Stalking">Domestic /
+                                Intimate Partner Violence, Sexual Assault and Stalking</option>
+                        </select>
                         <input type="submit" value="Get Help">
-                        <p class="signup">Here for another service?<a href="#" onclick="toggleForm();"> Switch Forms</a>
-                        </p>
+                        <!-- <p class="signup">Here for another service?<a href="#" onclick="toggleForm();"> Switch Forms</a>
+                        </p> -->
                     </form>
                 </div>
             </div>
-            <div class="user signupBx">
+            <!-- <div class="user signupBx">
 
                 <div class="formBx">
                     <form id="secondForm">
@@ -67,7 +87,7 @@
                     <div class="overlay"></div>
                     <img src="./img/pexels-cottonbro-3737574.jpg" alt="">
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -270,30 +290,30 @@
         </div>
     </section>
     <!-- Portfolio -->
-    
 
-    
+
+
     <!-- Team -->
     <!-- Contact -->
     <section class="sec contact" id="contact">
         <div class="content">
             <div class="mxw800p">
                 <h3>Send Us a Message</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, pariatur.</p>
+                <h3>"Reclaim Your Happiness"</h4>
             </div>
             <div class="contactForm">
-                <form >
+                <form method="post" action="https://formspree.io/f/mjvjykek">
                     <div class="row100">
                         <div class="inputBx50">
-                            <input type="text" name="" placeholder="Full Name">
+                            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
                         </div>
                         <div class="inputBx50">
-                            <input type="text" name="" placeholder="Email">
+                            <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
                         </div>
                     </div>
                     <div class="row100">
                         <div class="inputBx100">
-                            <textarea  placeholder="Message"></textarea>
+                            <textarea name="complaint" id="complaint"  placeholder="Message"></textarea>
                         </div>
                     </div>
                     <div class="row100">
@@ -312,7 +332,7 @@
             </div>
             <p class="copyright">Website developed By Cunningham Development LLC</p>
         </div>
-        
+
     </section>
     <script src="./js/main.js"></script>
 </body>
